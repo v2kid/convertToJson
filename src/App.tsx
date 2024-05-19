@@ -37,7 +37,7 @@ const App: React.FC = () => {
   return (
     <>
       <Form
-        labelCol={{ span: 24 }}
+        labelCol={{ span: 12 }}
         wrapperCol={{ span: 18 }}
         form={form}
         name="dynamic_form_complex"
@@ -45,7 +45,7 @@ const App: React.FC = () => {
         initialValues={{ [listName]: [{}] }}
       >
         <Row>
-          <Col span={12}>
+          <Col span={6}>
             <Form.List name={listName}>
               {(fields, { add, remove }) => (
                 <div
